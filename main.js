@@ -10,14 +10,14 @@ var elOutput = document.querySelector(".result-output");
 elCelciusInput.addEventListener('input', function(){
     var elFahrenheitResult  = parseFloat(elCelciusInput.value.trim(), 10) * 9/5 + 32;
     elFarenheitInput.value = elFahrenheitResult;
-    elOutput.textContent =  elCelciusInput.value + '°C×9/5+32 =' + elFahrenheitResult;
+    elOutput.textContent =  elCelciusInput.value + '°C×9/5+32 =' + elFahrenheitResult + '°F';
 });
 
 
 elFarenheitInput.addEventListener("input", function(){
     var elCelciusResult  = (parseFloat(elFarenheitInput.value.trim(), 10) - 32 ) * 5/9;
     elCelciusInput.value = elCelciusResult;
-    elOutput.textContent =  elFarenheitInput.value + '°F-32)×5/9 =' + elCelciusResult;
+    elOutput.textContent =  elFarenheitInput.value + '°F-32)×5/9 =' + elCelciusResult + '°C';
 });
 
 
